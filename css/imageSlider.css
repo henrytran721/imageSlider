@@ -1,0 +1,49 @@
+body, html {
+  margin: 0; }
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+  height: 100%;
+  background-color: gray;
+  position: relative;
+  z-index: 1; }
+
+.imageSlide {
+  display: none; }
+
+.spider, .kobe {
+  width: 100%; }
+
+.leftArrow {
+  position: absolute;
+  top: 40%;
+  cursor: pointer;
+  left: 10; }
+
+.rightArrow {
+  right: 0;
+  position: absolute;
+  top: 40%;
+  cursor: pointer; }
+
+.dots {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 45%; }
+  .dots .firstDot, .dots .secondDot, .dots .thirdDot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+    padding: 5px;
+    margin-right: 10px;
+    cursor: pointer; }
+
+/*.imageSlide {
+  display: none;
+}*/
+
+/*# sourceMappingURL=imageSlider.css.map */

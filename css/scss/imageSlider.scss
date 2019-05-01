@@ -1,0 +1,67 @@
+
+body, html {
+  margin: 0;
+}
+
+$padding: 5px;
+$margin: 10px;
+
+@mixin arrow {
+  position: absolute;
+  top: 40%;
+  cursor: pointer;
+}
+
+@mixin dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+  padding: $padding;
+  margin-right: $margin;
+  cursor: pointer;
+}
+
+@mixin image {
+  width: 100%;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+  height: 100%;
+  background-color: gray;
+  position: relative;
+  z-index: 1;
+}
+.imageSlide {
+  display: none;
+}
+.spider, .kobe {
+  width: 100%;
+}
+
+.leftArrow {
+  @include arrow;
+  left: 10;
+}
+
+.rightArrow {
+  right: 0;
+  @include arrow;
+}
+.dots {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+
+  .firstDot, .secondDot, .thirdDot {
+    @include dot;
+  }
+}
+
+/*.imageSlide {
+  display: none;
+}*/
