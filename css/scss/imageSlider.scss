@@ -37,8 +37,9 @@ $margin: 10px;
 }
 .imageSlide {
   display: none;
+  transition: 1s ease-in-out;
 }
-.spider, .kobe {
+.spider, .kobe, .thor {
   width: 100%;
 }
 
@@ -62,6 +63,10 @@ $margin: 10px;
   }
 }
 
+.active {
+  background-color: gray !important;
+  border: 2px solid black;
+}
 /*.imageSlide {
   display: none;
 }*/

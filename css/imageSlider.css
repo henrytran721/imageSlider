@@ -11,9 +11,10 @@ body, html {
   z-index: 1; }
 
 .imageSlide {
-  display: none; }
+  display: none;
+  transition: 1s ease-in-out; }
 
-.spider, .kobe {
+.spider, .kobe, .thor {
   width: 100%; }
 
 .leftArrow {
@@ -41,6 +42,10 @@ body, html {
     padding: 5px;
     margin-right: 10px;
     cursor: pointer; }
+
+.active {
+  background-color: gray !important;
+  border: 2px solid black; }
 
 /*.imageSlide {
   display: none;
